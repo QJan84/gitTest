@@ -1,0 +1,152 @@
+### Online Versionnnnnnnnnnn
+
+<container>
+  <row>
+    <columns>
+      <!--#online_version #-->
+      	Wird diese Nachricht nicht richtig dargestellt, klicken Sie bitte <a href="http://34129.seu.cleverreach.com/m/[MAILING_ID]/[HASH]"><strong>hier</strong></a>.
+      <!--#/online_version#-->
+    </columns>
+  </row>
+</container>
+
+### Logo
+
+<container>
+  <row>
+    <columns>
+      <!--#image #-->
+      	<img class="float-right" src="http://in-stability.de/newsletter/img/in-stabilitiy-logo.gif" alt="Zur Homepage">
+      <!--#/image#-->
+    </columns>
+  </row>
+</container>
+
+### Newsletter Number
+
+<container>
+  <row>
+    <columns class="topbar">
+      <!--#html #-->Newsletter Monat Jahr<!--#/html#-->
+    </columns>
+  </row>
+</container>
+
+### Anrede
+
+<container>
+  <row>
+    <columns class="salutation">
+      <!--#html #-->
+      	{IF[ANREDE=="Herr"]}Lieber Herr {NACHNAME}, {ELSE[ANREDE]}Liebe Frau {NACHNAME}, {ELSE[ANREDE]}Sehr geehrte Damen und Herren, {ENDIF[ANREDE]}
+      <!--#/html#-->
+    </columns>
+  </row>
+</container>
+
+### Dynamische Inhalte
+
+<container>
+  <row>
+    <columns class="loop-element">
+			<!--#loop #-->
+				
+				Hier werden dynamische Elemente hineingezogen!
+				<!--#loopsplit#-->
+
+				
+			<!--#/loop#-->
+    </columns>
+  </row>
+</container>
+
+### Aktuelle Termine
+
+<container>
+  <row>
+    <columns small="12" large="3" class="large-offset-1">
+      <img class="small-float-center" src="http://in-stability.de/newsletter/img/wegweiser.png" alt="in stability" width="164" height="215" />
+    </columns>
+    <columns small="12" large="8">
+      <h4 class="small-text-center">
+      	<!--#text_line #-->Aktuelle Termine<!--#/text_line#-->
+      </h4>
+      <p class="small-text-center">
+      	<!--#loop #-->
+
+      		<!--#html #-->
+      			<p>
+      				<!--#link #-->
+      					Grundausbildung Transaktionsanalyse: Organisations- und Persönlichkeitsentwicklung
+      				<!--#/link #-->
+            	<p class="list-meta">
+            		<!--#text_line #-->September 2013 bis Juni 2014 in Hannover<!--#/text_line#-->
+            	</p>
+      			</p>
+      		<!--#/html#-->
+      		<!--#loopsplit#-->
+      		<!--#html #-->
+	      		<p>
+		      		<!--#image #-->
+		      			<img src="http://in-stability.de/newsletter/img/trenner-footer.png" alt="divider" width="346" height="22" />
+		      		<!--#/image#-->
+      			</p>
+      		<!--#/html#-->
+      		<!--#loopsplit#-->
+      		<!--#html#-->
+      			<p>
+	      			<!--#link #-->
+	      				Alle Seminar- und Weiterbildungstermine
+	      			<!--#/link#-->
+      			</p>
+      		<!--#/html#-->
+
+      	<!--#/loop#-->
+      </p>
+    </columns>  
+  </row>
+</container>
+
+### Footer
+
+<container>
+  <row>
+  	<columns>
+   		<h5><!--#text_line #-->Impressum<!--#/text_line#--></h5>
+  	<columns>
+  </row>
+  <row>
+    <columns small="12" large="6">
+    	<!--#html #-->
+	  		In Stability GmbH &amp; Co. KG<br />
+	      Wiehbergstraße 52 B<br />
+	      30519 Hannover<br />
+	      Deutschland<br /><br />
+	      T +49 511 16 59 26 – 0<br />
+	      F +49 511 16 59 26 – 11<br />
+	      <a href="mailto:office@in-stability.de">office@in-stability.de</a><br />
+	      <a href="http://www.in-stability.de">www.in-stability.de</a><br /><br />
+	      Sitz Hannover, Amtsgericht Hannover, HRA 202 498<br /><br />
+	      Geschäftsführende Gesellschafter:<br />
+	      Dr. Michael Korpiun,<br />
+	      Martin Thiele
+      <!--#/html#-->
+    </columns>
+    <columns small="12" large="6">
+    	<!--#html #-->
+    		Sie erhalten diese E-Mail, weil Sie Ihre E-Mail-Adresse <span style="color: #ef7f01;">{EMAIL}</span> auf unserer Website <a style="color: #ef7f01;" href="http://www.in-stability.de">www.in-stability.de</a> in den Verteiler eingetragen haben, oder über einen persönlichen Kontakt um Informationen gebeten haben. <br /><br />
+    		Möchten Sie diesen Newsletter abbestellen, <a style="color: #ef7f01;" href="http://in-stability.de/de/aktuelles/newsletter/?mail={EMAIL}#abmelden">klicken Sie bitte hier</a>. Sollte es bei der Abmeldung Probleme geben, senden Sie diesen Newsletter bitte mit dem Vermerk "abbestellen" an <a style="color: #ef7f01;" href="mailto:office@in-stability.de">office@in-stability.de</a> zurück.
+    	<!--#/html#-->
+    </columns>
+  </row>
+	<row>
+  	<columns>
+  		<p class="hr">
+  			<img src="http://in-stability.de/newsletter/img/trenner-footer-2.png" alt="divider" width="560" height="25" />
+  		</p>
+  		<!--#text_line #-->                      
+     		<p>© In Stability GmbH &amp; Co. KG</p>
+      <!--#/text_line#-->
+  	<columns>
+  </row>
+</container>
